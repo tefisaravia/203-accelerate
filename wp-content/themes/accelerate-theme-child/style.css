@@ -1,0 +1,233 @@
+/*
+Theme Name:   Accelerate Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Accelerate Child Theme - Accelerate
+Author:   	Tefi Saravia
+Author URI:   http://example.com
+Template: 	accelerate-theme
+Version:      2.0.0
+Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  accelerate-theme-child
+*/
+
+
+
+.home-page {
+
+background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+#masthead {
+	background: none repeat scroll 0 0 #45ac9d;
+}
+
+.button {
+	background: #45ac9d;
+}
+
+.blog-post{
+	width: 50%;
+	margin-bottom: 2em;
+}
+
+.blog-post h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+
+.blog-post h3 {
+	font-size: 1.5em;
+}
+
+.read-more-link {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+
+/* SINGLE PAGE CASE STUDY*/
+
+.case-study {
+	font-family: 'Open Sans', sans-serif;
+	display: grid;
+	grid-template-columns: 300px 600px;
+	grid-template-rows: auto;
+	row-gap: 50px;
+}
+
+aside .case-study-sidebar{
+	grid-column-start: 1;
+	grid-column-end: 1;
+
+}
+
+.case-study-images{
+	padding-left: 50px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.case-study-sidebar h4 {
+	color: #a6a6a6;
+	font-weight: 300;
+	margin: 15px 0;
+}
+
+.case-study-sidebar span{
+	color:#3b3b3b;
+	font-weight: 300;
+}
+
+.case-study-images img {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.case-study-sidebar p{
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+/* NEXT / PREV STYLES */
+
+#navigation {
+	background: #fff;
+	border: solid #bfbfbf;
+	border-width: 1px 0;
+	clear: both;
+	font: .8em/4.08 'OpenSans', Arial, sans-serif;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	margin: 5em 0;
+	text-align: center;
+}
+#navigation .left {
+	display: inline;
+	float: left;
+}
+#navigation .right {
+	display: inline;
+	float: right;
+}
+#navigation .left a,
+#navigation .right a {
+	color: #45ac9d;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#navigation .left a span,
+#navigation .right a span {
+	color: #150300;
+}
+#navigation .left a span {
+	padding-left: .5em;
+}
+#navigation .right a span {
+	padding-right: .5em;
+}
+#navigation .left a:hover,
+#navigation .right a:hover {
+	text-decoration: none;
+}
+#navigation .left a:hover span,
+#navigation .right a:hover span {
+	text-decoration: underline;
+}
+#navigation .pagination {
+	display: none;
+	color: #a6a6a6;
+}
+
+/*FEATURED WORK HOME PAGE SECTION*/
+
+.featured-work {
+	margin-bottom: 3em;
+}
+.featured-work h3{
+	
+	font-size: 1.5em;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+}
+
+.homepage-featured-work {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.individual-featured-work {
+	list-style-type: none;
+}
+
+.individual-featured-work h4 {
+	text-align: center;
+}
+
+/* Social media navigation menu */
+
+#menu-social-media-nav {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-evenly;
+}
+
+.menu-social-media-nav-container li {
+	background-color: #3b3b3b;
+	border-radius: 50%;
+	height: 2em;
+	width: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.menu-social-media-nav-container i {
+	color: white;
+	text-align: center;
+}
+
+/* CONTACT FORM*/
+
+#nf-field-4 {
+	background: #45ac9d;
+	float: right;
+	width: 200px;
+}
+
+.nf-form-content .list-select-wrap .nf-field-element>div, .nf-form-content input:not([type=button]), .nf-form-content textarea {
+	background: white !important ;
+}
+
+/* services page*/
+#services {
+	margin: 0 20%;
+}
+
+.wp-block-cover__inner-container {
+	width:50% !important;
+}
+
+
+#services h2{
+	font-weight: 600;
+	font-size: 1.5em;
+}
+/* media queries */
+@media (min-width: 400px) {
+	#navigation .pagination {
+		display: inline;
+	}
+}
+/* End NEXT / PREV STYLES */
+
+.site-footer{
+	border-top: none;
+}
